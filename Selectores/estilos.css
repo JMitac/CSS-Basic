@@ -1,0 +1,73 @@
+a.homepage:link, a.homepage:visited {
+  padding: 1px 10px 1px 10px;
+  color: #fff;
+  background: #555;
+  border-radius: 3px;
+  border: 1px outset rgba(50,50,50,.5);
+  font-family: georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+a.homepage:hover, a.homepage:focus, a.homepage:active {
+  background-color: #666;
+}
+
+/*MENU*/
+div.menu-bar ul ul {
+  display: none;
+
+}
+
+div.menu-bar li:hover > ul {
+  display: block;
+  
+}
+/*YO AGREGE ESTO
+ border:
+    solid, dotted, dashed, double
+    inset, outset,ridge, groove
+    none(ninguno), hidden(oculto)
+*/
+div > ul > li > a{
+ /*border: dashed #4B73A1; */
+ border-top: solid #5ED2A8;
+ border-right: dotted #D12626;
+ border-bottom: dashed #9021B2;
+ border-left: inset #4B73A1; 
+}
+
+/*
+Cuando muchos elementos tienen el mismo estilo , se puede especificar 
+un grupo de selectores , separándolos por comas. 
+La declaración se aplica a todos los elementos seleccionados.
+EJM:
+  h1, h2, h3 {color: navy;}
+*/
+
+/*
+  -TIPOS DE FUENTES: font-family
+  -LOS TAMAÑOS DE LA FUENTE: font-size
+  -ALTURA DE LINEA: El interlíneado especifica el espacio entre líneas. 
+      Si el documento tiene párrafos largos con muchas líneas, 
+      una separación más grande de lo normal, hace que sea más fácil 
+      de leer, especialmente si el tamaño de la letra es pequeña.
+
+      line-height
+  -DECORACION: subrayado o tachado
+      text-decoration
+  -COLOR DE FONDO: background-color
+
+*/
+div.caja1{
+  border: 2px solid red;
+  padding: 5px;
+  /*margin-left: 24px;*/
+  margin: 5px 3px 20px 24px;
+}
+div.caja2{
+  border: 2px solid #52B8A9;
+  padding: 15px;  
+  margin: 5px 3px 20px 24px;
+}
