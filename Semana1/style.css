@@ -1,0 +1,83 @@
+/*NORMALIZE.CSS : ES UN CONJUNTO DE NORMAS Y REGLAS, PARA QUE 
+			   SEAN LO MAS PARECIDO EN TODOS LOS NAVEAGADORES*/
+
+/*DRY: DON'T REPEAT YOURSELF, QUE NUESTRO CSS SEA MAS PEQUEÑO Y MODULAR
+	   QUE SEA REUTILIZABLE, QUE SE USE CLASES Y REUTILIZARLAS*/
+
+/*
+SELECTOR CLASE
+SELECTOR ID
+SELECTOR ELEMENTO
+SELECTOR UNIVERSAL
+SELECTO ATRIBUTO
+*/
+/*SELECTOR UNIVERSAL: AFECTA A TODOS LOS ELEMENTOS DE LA WEB, NO ES RECOMENDABLE
+			A NIVEL DE OPTIMIZACION PUEDE TENER ALGUNOS CONTRATIEMPOS
+*{
+	color:red;
+}
+*/
+html{
+	font-size: 100%;/*por defecto el font-size es de 16px, que seria el 100%*/
+}
+/*SELECTOR DE ELEMENTO: ESCRIBIR EL NOMBRE DE LA ETIQUETA, Y AÑADIR LOS ESTILOS*/
+h1, .h1{/*A TODOS LOS H1 DEL DOCUMENTO LES VA AFECTAR*/
+	font-family: Arial, Helvetica;
+	color: maroon;
+	font-size: 24px;
+}
+h2, .h2{/**/
+	font-family: Arial, Helvetica;
+	color: green;
+	font-size: 10rem;
+	font-size: 1rem;/*SIEMPRE SE QUEDA CON LA 2° OPCION*/
+}
+/*rem: es una unidad de medida de tamaño de la raiz(html). NO FUNCION EN INTER. EXPLORER*/
+/*SELECTOR ID: SOLO SE PUEDE UTILIZAR UNA VEZ POR ELEMENTO, ASI QUE NO ES RECOMENDABLE
+			EL USO DE LOS ID, ES MAS PARA USO DE JAVASCRIPT.......#   */
+
+/*SELECTOR DE CLASE: SE PUEDE REUTILIZAR MAS DE UNA VEZ, EN DIFERENTES ELEMENTOS*/
+.background-pink {
+	background-color: pink;
+}
+
+.article{
+
+}
+	.article__header{
+		font-family: Arial, Helvetica;
+		color: green;	
+	}
+	.article__footer{
+
+	}
+/*SELECTORES DE ATRIBUTOS: data-NombreAtributo*/
+li[data-RobotOwner="Koji Kabuto"]{
+	background-color: olive;
+	color: white;
+}
+li[data-RobotOwner="Sayaka Yumi"]{
+	background-color: brown;
+	color: white;
+}
+/*
+input:focus{
+	background-color: #BCCDCC;
+}*/
+input[type="mail"]:valid{
+	background-color: #9DF67C;
+}
+input[type="mail"]:focus:invalid{
+	background-color: #C31C1C;
+}
+/*CUANDO ESTA CHECKED, EL SGTE DE "CLASE CHECKED" CAMBIE DE COLOR*/
+/*~ : TODOS LOS SGTE HERMANOS DE LOS ELEMENTOS, QUE ESTAN AL MISMO NIVEL DEL INPUT*/
+/*+ : EL PRIMERO DE TODOS LOS HERMANOS, EL SIGUIENTE*/
+.toggle:checked ~ .checked{/*SELECCIONAR [~ ó +]*/
+	background-color: #4532D6;
+}
+.checked{
+	width: 100px;
+	height: 100px;
+	background-color: peru;
+}
